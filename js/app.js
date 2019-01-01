@@ -92,7 +92,7 @@ const enemy3 = new Enemy(0, 200, 300);
 
 allEnemies.push(enemy1, enemy2, enemy3);
 
-
+const player = new Player();
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
