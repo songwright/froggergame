@@ -37,10 +37,13 @@ class Player {
     constructor() {
         // Player image file
         this.sprite = 'images/char-boy.png';
-        this.x = 0;
-        this.y = 0;
         this.horz = 101; // x axis distance change for movement
         this.vert = 83; // y axis distance change for movement
+        // Beginning position at the middle bottom
+        this.startX = this.horz * 2;
+        this.startY = (this.vert * 5) - 11; // Offset 11px to center the player
+        this.x = this.startX;
+        this.y = this.startY;
 
         this.update = function() {
         // Collision detection
@@ -49,8 +52,8 @@ class Player {
             let dy = this.y - enemy.y;
             let distance = Math.sqrt(dx * dx + dy * dy); // Distance formula
             if (distance < 70) { // Player loses if an enemy is within 70px
-                this.x = 0;
-                this.y = 0;
+                this.x = this.startX;
+                this.y = this.startY;
                 }
             }
         }
