@@ -6,10 +6,10 @@ class Enemy {
 
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
-    this.sprite = 'images/enemy-bug.png';
-    this.x = x;
-    this.y = y;
-    this.speed = speed;
+        this.sprite = 'images/enemy-bug.png';
+        this.x = x;
+        this.y = y;
+        this.speed = speed;
     
 
 // Update the enemy's position, required method for game
@@ -40,6 +40,19 @@ class Player {
         this.x = x;
         this.y = y;
         this.speed = speed;
+
+        this.update = function() {
+        // Collision detection
+        for (let enemy of allEnemies) {
+            let dx = this.x - enemy.x;
+            let dy = this.y - enemy.y;
+            let distance = Math.sqrt(dx * dx + dy * dy); // Distance formula
+            if (distance < 70) { // Player loses if an enemy is within 70px
+                this.x = 0;
+                this.y = 0;
+                }
+            }
+        }
     }
 };
 
