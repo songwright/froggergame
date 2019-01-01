@@ -39,7 +39,8 @@ class Player {
         this.sprite = 'images/char-boy.png';
         this.x = x;
         this.y = y;
-        this.speed = speed;
+        this.horz = 101; // x axis distance change for movement
+        this.vert = 83; // y axis distance change for movement
 
         this.update = function() {
         // Collision detection
@@ -57,6 +58,24 @@ class Player {
         // Draw the player on the screen, required method for game
         this.render = function() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+        }
+
+        // Update player's x and y properties according to input
+        this.handleInput = function(direction) {
+        switch (direction) {
+            case "up":
+                this.y -= this.vert;
+                break;
+            case "down":
+                this.y += this.vert;
+                break;
+            case "left":
+                this.x -= this.horz;
+                break;
+            case "right":
+                this.x += this.horz;
+                break;
+            }
         }
     }
 };
