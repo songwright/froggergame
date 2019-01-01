@@ -8,7 +8,7 @@ class Enemy {
         // a helper we've provided to easily load images
         this.sprite = 'images/enemy-bug.png';
         this.x = x;
-        this.y = y;
+        this.y = y + 63; // Offset 63px to center enemy;
         this.speed = speed;
     
 
@@ -89,9 +89,9 @@ class Player {
 
 const allEnemies = [];
 
-const enemy1 = new Enemy(-200, 0, 100);
-const enemy2 = new Enemy(-100, 100, 200);
-const enemy3 = new Enemy(0, 200, 300);
+const enemy1 = new Enemy(-202, 0, 100);
+const enemy2 = new Enemy(-152, 83, 200);
+const enemy3 = new Enemy(-101, 166, 300);
 
 allEnemies.push(enemy1, enemy2, enemy3);
 
