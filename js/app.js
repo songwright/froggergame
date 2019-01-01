@@ -66,16 +66,16 @@ class Player {
         // Update player's x and y properties according to input
         this.handleInput = function(direction) {
         switch (direction) {
-            case "up":
+            case 'up':
                 this.y -= this.vert;
                 break;
             case "down":
                 this.y += this.vert;
                 break;
-            case "left":
+            case 'left':
                 this.x -= this.horz;
                 break;
-            case "right":
+            case 'right':
                 this.x += this.horz;
                 break;
             }
@@ -108,4 +108,31 @@ document.addEventListener('keyup', function(e) {
     };
 
     player.handleInput(allowedKeys[e.keyCode]);
+});
+
+// Click outside the player's box to move the player
+document.addEventListener('click', function (event) {
+    const rect = document.querySelector('canvas').getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    const deltaX = x - player.x - 50; // Offset 50px to center
+    const deltaY = y - player.y - 100; // Offset 100px to center
+    const horz = 101;
+    const vert = 83;
+
+    // Math.abs confines transverse click values to 1-block wide areas
+    switch (true) {
+      case (deltaX > horz/2 && Math.abs(deltaY) < vert/2):
+        player.handleInput('right');
+        break;
+      case (deltaX < -horz/2 && Math.abs(deltaY) < vert/2):
+        player.handleInput('left');
+        break;
+      case (Math.abs(deltaX) < horz/2 && deltaY < -vert/2):
+        player.handleInput('up');
+        break;
+      case (Math.abs(deltaX) < horz/2 && deltaY > vert/2):
+        player.handleInput('down');
+        break;
+    }
 });
