@@ -1,19 +1,19 @@
 // Enemies our player must avoid
 class Enemy {
     constructor(x, y, speed) {
-    // Variables applied to each of our instances go here,
-    // we've provided one for you to get started
+        // Variables applied to each of our instances go here,
+        // we've provided one for you to get started
 
-    // The image/sprite for our enemies, this uses
-    // a helper we've provided to easily load images
+        // The image/sprite for our enemies, this uses
+        // a helper we've provided to easily load images
         this.sprite = 'images/enemy-bug.png';
         this.x = x;
         this.y = y;
         this.speed = speed;
     
 
-// Update the enemy's position, required method for game
-// Parameter: dt, a time delta between ticks
+        // Update the enemy's position, required method for game
+        // Parameter: dt, a time delta between ticks
         this.update = function(dt) {
         // You should multiply any movement by the dt parameter
         // which will ensure the game runs at the same speed for
@@ -22,7 +22,7 @@ class Enemy {
         this.x += this.speed * dt;
         }
 
-// Draw the enemy on the screen, required method for game
+        // Draw the enemy on the screen, required method for game
         this.render = function() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
         }
@@ -52,6 +52,11 @@ class Player {
                 this.y = 0;
                 }
             }
+        }
+
+        // Draw the player on the screen, required method for game
+        this.render = function() {
+        ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
         }
     }
 };
