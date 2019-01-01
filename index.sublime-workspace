@@ -1,0 +1,251 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"start",
+				"startX"
+			],
+			[
+				"s",
+				"speed"
+			],
+			[
+				"cn",
+				"constructor"
+			],
+			[
+				"en",
+				"enemy1"
+			],
+			[
+				"all",
+				"allEnemies"
+			],
+			[
+				"al",
+				"allEnemies"
+			],
+			[
+				"e",
+				"enemy3"
+			],
+			[
+				"Pl",
+				"Player"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"fn",
+				"font-size\tproperty"
+			],
+			[
+				"font",
+				"font-weight\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/frontend-nanodegree-arcade-game-master/js/app.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/frontend-nanodegree-arcade-game-sandbox/css/style.css",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 2 - Web Programming with JavaScript/Project - Memory Game/fend-project-memory-game-sandbox/js/app.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/frontend-nanodegree-arcade-game-sandbox/js/app.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/frontend-nanodegree-arcade-game-sandbox/js/engine.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 2 - Web Programming with JavaScript/Project - Memory Game/fend-project-memory-game/css/app.css",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/frontend-nanodegree-arcade-game-sandbox/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/frontend-nanodegree-arcade-game-master/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/course-es6-master/lesson-4/walk-through-transpiling/ES5/code.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/course-es6-master/lesson-4/walk-through-transpiling/.babelrc",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/course-es6-master/lesson-4/walk-through-transpiling/package.json",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/course-es6-master/lesson-4/walk-through-transpiling/ES6/code.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson6-styling/03-contrast-audit/blog.css",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson6-styling/02-style-aria-states/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson6-styling/01-focus-styles/main.css",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/21-dialog/solution/modal.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/21-dialog/solution/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/21-dialog/solution/modal.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson2-focus/01-basic-form/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/13-combobox/combobox.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/06-radio-group/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/06-radio-group/radiogroup.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/03-first-steps/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/03-first-steps/checkboxes.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/03-first-steps/checkboxes.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/03-first-steps/checkboxes.old.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/03-first-steps/checkboxes.js.old",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson5-semantics-aria/03-first-steps/main.css",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson2-focus/05-radio-group/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson2-focus/05-radio-group/radiogroup.js",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson3-semantics-built-in/16-labelling-input-elements/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson3-semantics-built-in/16-labelling-input-elements/flight-booking.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson3-semantics-built-in/05-writing-semantic-html/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson3-semantics-built-in/05-writing-semantic-html/wombats.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Data/WWW/ramon-sanchez/www/css/styles.css",
+		"/E/Users/Ramon Sanchez/Dropbox/Data/WWW/ramon-sanchez/www/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Data/WWW/ramon-sanchez/www/css/bootstrap.css",
+		"/E/Users/Ramon Sanchez/Dropbox/Data/WWW/ramon-sanchez/www/Concordia Website/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Data/WWW/ramon-sanchez/www/css/main.css",
+		"/E/Users/Ramon Sanchez/Dropbox/Data/WWW/Wedding site/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson2-focus/04-offscreen-content/blog.css",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/ud891/lesson2-focus/04-offscreen-content/index.html",
+		"/E/Users/Ramon Sanchez/Dropbox/Udacity/Part 3 - Exploring JS - Objects, Tools and Testing/radio button/example.js"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
