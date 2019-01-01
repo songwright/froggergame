@@ -37,8 +37,8 @@ class Player {
     constructor() {
         // Player image file
         this.sprite = 'images/char-boy.png';
-        this.x = x;
-        this.y = y;
+        this.x = 0;
+        this.y = 0;
         this.horz = 101; // x axis distance change for movement
         this.vert = 83; // y axis distance change for movement
 
@@ -91,6 +91,8 @@ const enemy2 = new Enemy(-100, 100, 200);
 const enemy3 = new Enemy(0, 200, 300);
 
 allEnemies.push(enemy1, enemy2, enemy3);
+
+
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
