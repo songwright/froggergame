@@ -21,11 +21,11 @@ class Enemy {
     // Increment x by speed * dt to move enemy forward
     this.x += this.speed * dt;
     }
-};
 
 // Draw the enemy on the screen, required method for game
-Enemy.prototype.render = function() {
+    this.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    }
 };
 
 // Now write your own player class
