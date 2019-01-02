@@ -2,8 +2,15 @@
 
 ## Table of Contents
 
+- [Game Instructions](#gameinstructions)
 - [Instructions](#instructions)
 - [Contributing](#contributing)
+
+## Game Instructions
+
+1. Load the index.html file for the game in your browser.
+2. Use arrow keys or click around the player character to move.
+3. Move the player character to the river to win.
 
 ## Instructions
 
