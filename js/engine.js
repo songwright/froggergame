@@ -22,7 +22,8 @@ var Engine = (function(global) {
         win = global.window,
         canvas = doc.createElement('canvas'),
         ctx = canvas.getContext('2d'),
-        lastTime;
+        lastTime,
+        id;
 
     canvas.width = 505;
     canvas.height = 606;
@@ -55,7 +56,15 @@ var Engine = (function(global) {
         /* Use the browser's requestAnimationFrame function to call this
          * function again as soon as the browser is able to draw another frame.
          */
-        win.requestAnimationFrame(main);
+        /* This if-else conditional stops the request for a new frame
+         * when the player meets the victory condition
+         */
+        if (player.victory === true) {
+            win.cancelAnimationFrame(id);
+        } else {
+            id = win.requestAnimationFrame(main);
+        }
+
     }
 
     /* This function does some initial setup that should only occur once,

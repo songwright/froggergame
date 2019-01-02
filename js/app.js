@@ -57,6 +57,7 @@ class Player {
         this.y = this.startY;
         this.bottomBoundary = this.vert * 4;
         this.rightBoundary = this.horz * 4;
+        this.victory = false;
 
         this.update = function() {
         // Collision detection
@@ -67,6 +68,11 @@ class Player {
             if (distance < 70) { // Player loses if an enemy is within 70px
                 this.reset();
                 }
+            }
+
+        // Win condition
+        if (this.y < (this.vert - 11)) { // Account for initial offset by 11px
+            this.victory = true;
             }
         }
 
