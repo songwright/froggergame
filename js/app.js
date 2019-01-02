@@ -11,6 +11,7 @@ class Enemy {
         this.y = y + 63; // Offset 63px to center enemy;
         this.speed = speed;
         this.horz = 101; // x axis distance change for movement
+        this.vert = 83; // y axis distance change for movement
         this.boundary = this.horz * 5; // Right side boundary
         this.resetX = -this.horz; // Left reset position
 
@@ -27,6 +28,7 @@ class Enemy {
         // The enemy will start in a random row
         if (this.x > this.boundary) {
             this.x = this.resetX;
+            this.y = ((Math.floor(Math.random() * 3)) * this.vert) + 63; // Offset 63px to center enemy
             }
         }
 
