@@ -65,8 +65,7 @@ class Player {
             let dy = this.y - enemy.y;
             let distance = Math.sqrt(dx * dx + dy * dy); // Distance formula
             if (distance < 70) { // Player loses if an enemy is within 70px
-                this.x = this.startX;
-                this.y = this.startY;
+                this.reset();
                 }
             }
         }
@@ -98,6 +97,12 @@ class Player {
                 }
                 break;
             }
+        }
+
+        // Reset to start position
+        this.reset = function () {
+        this.x = this.startX;
+        this.y = this.startY;
         }
     }
 };
