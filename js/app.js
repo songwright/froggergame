@@ -111,8 +111,9 @@ const allEnemies = [];
 const enemy1 = new Enemy(-202, 0, 100);
 const enemy2 = new Enemy(-152, 83, ((Math.floor(Math.random() * 200)) + 100));
 const enemy3 = new Enemy(-101, 166, 300);
+const enemy4 = new Enemy(-101, ((Math.floor(Math.random() * 3)) * 83), 300);
 
-allEnemies.push(enemy1, enemy2, enemy3);
+allEnemies.push(enemy1, enemy2, enemy3, enemy4);
 
 const player = new Player();
 
