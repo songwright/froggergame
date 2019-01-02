@@ -29,6 +29,7 @@ class Enemy {
         if (this.x > this.boundary) {
             this.x = this.resetX;
             this.y = ((Math.floor(Math.random() * 3)) * this.vert) + 63; // Offset 63px to center enemy
+            this.speed = ((Math.floor(Math.random() * 200)) + 100);
             }
         }
 
@@ -108,7 +109,7 @@ class Player {
 const allEnemies = [];
 
 const enemy1 = new Enemy(-202, 0, 100);
-const enemy2 = new Enemy(-152, 83, 200);
+const enemy2 = new Enemy(-152, 83, ((Math.floor(Math.random() * 200)) + 100));
 const enemy3 = new Enemy(-101, 166, 300);
 
 allEnemies.push(enemy1, enemy2, enemy3);
