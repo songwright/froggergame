@@ -10,7 +10,9 @@ class Enemy {
         this.x = x;
         this.y = y + 63; // Offset 63px to center enemy;
         this.speed = speed;
-    
+        this.horz = 101; // x axis distance change for movement
+        this.boundary = this.horz * 5; // Right side boundary
+        this.resetX = -this.horz; // Left reset position
 
         // Update the enemy's position, required method for game
         // Parameter: dt, a time delta between ticks
@@ -20,6 +22,12 @@ class Enemy {
         // all computers.
         // Increment x by speed * dt to move enemy forward
         this.x += this.speed * dt;
+
+        // Loop around to the left side and randomize enemy speed.
+        // The enemy will start in a random row
+        if (this.x > this.boundary) {
+            this.x = this.resetX;
+            }
         }
 
         // Draw the enemy on the screen, required method for game
