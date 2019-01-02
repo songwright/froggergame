@@ -52,6 +52,8 @@ class Player {
         this.startY = (this.vert * 5) - 11; // Offset 11px to center the player
         this.x = this.startX;
         this.y = this.startY;
+        this.bottomBoundary = this.vert * 4;
+        this.rightBoundary = this.horz * 4;
 
         this.update = function() {
         // Collision detection
@@ -78,13 +80,19 @@ class Player {
                 this.y -= this.vert;
                 break;
             case "down":
+                if (this.y < this.bottomBoundary) { // Bottom boundary
                 this.y += this.vert;
+                }
                 break;
             case 'left':
+                if (this.x > 0) { // Left boundary
                 this.x -= this.horz;
+                }
                 break;
             case 'right':
+                if (this.x < this.rightBoundary) { // Right boundary
                 this.x += this.horz;
+                }
                 break;
             }
         }
