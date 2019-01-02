@@ -25,6 +25,18 @@ var Engine = (function(global) {
         lastTime,
         id;
 
+    // These constants define the modal and modal button.
+    const modal = document.querySelector('.modal');
+    const replay = document.querySelector('.modal-content button');
+
+    // An event listener for the replay button
+    replay.addEventListener('click', function() {
+        modal.style.display = "none";
+        player.reset();
+        player.victory = false;
+        win.requestAnimationFrame(main);
+    });
+
     canvas.width = 505;
     canvas.height = 606;
     doc.body.appendChild(canvas);
@@ -61,6 +73,7 @@ var Engine = (function(global) {
          */
         if (player.victory === true) {
             win.cancelAnimationFrame(id);
+            modal.style.display = "flex";
         } else {
             id = win.requestAnimationFrame(main);
         }
