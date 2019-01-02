@@ -153,22 +153,20 @@ document.addEventListener('click', function (event) {
     const clickedOnButton = event.target;
 
     // Math.abs confines transverse click values to 1-block wide areas
-    if (clickedOnButton.tagName === 'BUTTON') {
-      return; // This prevents a move error after game reset.
-    } else {
     switch (true) {
-      case (deltaX > horz/2 && Math.abs(deltaY) < vert/2):
+        case (clickedOnButton.tagName === 'BUTTON'):
+        return; // This prevents a move error after game reset.
+        case (deltaX > horz/2 && Math.abs(deltaY) < vert/2):
         player.handleInput('right');
         break;
-      case (deltaX < -horz/2 && Math.abs(deltaY) < vert/2):
+        case (deltaX < -horz/2 && Math.abs(deltaY) < vert/2):
         player.handleInput('left');
         break;
-      case (Math.abs(deltaX) < horz/2 && deltaY < -vert/2):
+        case (Math.abs(deltaX) < horz/2 && deltaY < -vert/2):
         player.handleInput('up');
         break;
-      case (Math.abs(deltaX) < horz/2 && deltaY > vert/2):
+        case (Math.abs(deltaX) < horz/2 && deltaY > vert/2):
         player.handleInput('down');
         break;
-        }
     }
 });
