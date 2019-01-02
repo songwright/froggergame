@@ -150,8 +150,12 @@ document.addEventListener('click', function (event) {
     const deltaY = y - player.y - 100; // Offset 100px to center
     const horz = 101;
     const vert = 83;
+    const clickedOnButton = event.target;
 
     // Math.abs confines transverse click values to 1-block wide areas
+    if (clickedOnButton.tagName === 'BUTTON') {
+      return; // This prevents a move error after game reset.
+    } else {
     switch (true) {
       case (deltaX > horz/2 && Math.abs(deltaY) < vert/2):
         player.handleInput('right');
@@ -165,5 +169,6 @@ document.addEventListener('click', function (event) {
       case (Math.abs(deltaX) < horz/2 && deltaY > vert/2):
         player.handleInput('down');
         break;
+        }
     }
 });
