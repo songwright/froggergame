@@ -1,4 +1,8 @@
-// Enemies our player must avoid
+// @description Enemies our player must avoid
+// @constructor
+// @param {number} x - x coordinate
+// @param {number} y - y coordinate
+// @param {number} speed - enemy speed
 class Enemy {
     constructor(x, y, speed) {
         // Variables applied to each of our instances go here,
@@ -38,12 +42,14 @@ class Enemy {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
         }
     }
-};
+}
 
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
 
+// @description player
+// @constructor
 class Player {
     constructor() {
         // Player image file
@@ -111,7 +117,7 @@ class Player {
         this.y = this.startY;
         }
     }
-};
+}
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
@@ -155,18 +161,18 @@ document.addEventListener('click', function (event) {
     // Math.abs confines transverse click values to 1-block wide areas
     switch (true) {
         case (clickedOnButton.tagName === 'BUTTON'):
-        return; // This prevents a move error after game reset.
+            return; // @resturns This prevents a move error after game reset.
         case (deltaX > horz/2 && Math.abs(deltaY) < vert/2):
-        player.handleInput('right');
-        break;
+            player.handleInput('right');
+            break;
         case (deltaX < -horz/2 && Math.abs(deltaY) < vert/2):
-        player.handleInput('left');
-        break;
+            player.handleInput('left');
+            break;
         case (Math.abs(deltaX) < horz/2 && deltaY < -vert/2):
-        player.handleInput('up');
-        break;
+            player.handleInput('up');
+            break;
         case (Math.abs(deltaX) < horz/2 && deltaY > vert/2):
-        player.handleInput('down');
-        break;
+            player.handleInput('down');
+            break;
     }
 });
