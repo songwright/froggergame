@@ -1,3 +1,4 @@
+
 // @description Enemies our player must avoid
 // @constructor
 // @param {number} x - x coordinate
@@ -21,7 +22,9 @@ class Enemy {
 
         // Update the enemy's position, required method for game
         // Parameter: dt, a time delta between ticks
-        this.update = function(dt) {
+    }
+
+    update(dt) {
         // You should multiply any movement by the dt parameter
         // which will ensure the game runs at the same speed for
         // all computers.
@@ -34,13 +37,12 @@ class Enemy {
             this.x = this.resetX;
             this.y = ((Math.floor(Math.random() * 3)) * this.vert) + 63; // Offset 63px to center enemy
             this.speed = ((Math.floor(Math.random() * 200)) + 100);
-            }
         }
+    }
 
         // Draw the enemy on the screen, required method for game
-        this.render = function() {
+    render() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-        }
     }
 }
 
@@ -64,8 +66,9 @@ class Player {
         this.bottomBoundary = this.vert * 4;
         this.rightBoundary = this.horz * 4;
         this.victory = false;
+    }
 
-        this.update = function() {
+    update() {
         // Collision detection
         for (let enemy of allEnemies) {
             let dx = this.x - enemy.x;
@@ -73,22 +76,22 @@ class Player {
             let distance = Math.sqrt(dx * dx + dy * dy); // Distance formula
             if (distance < 70) { // Player loses if an enemy is within 70px
                 this.reset();
-                }
             }
+        }
 
         // Win condition
         if (this.y < (this.vert - 11)) { // Account for initial offset by 11px
             this.victory = true;
-            }
         }
+    }
 
-        // Draw the player on the screen, required method for game
-        this.render = function() {
-        ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-        }
+    // Draw the player on the screen, required method for game
+    render() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    }
 
-        // Update player's x and y properties according to input
-        this.handleInput = function(direction) {
+    // Update player's x and y properties according to input
+    handleInput(direction) {
         switch (direction) {
             case 'up':
                 this.y -= this.vert;
@@ -108,14 +111,13 @@ class Player {
                 this.x += this.horz;
                 }
                 break;
-            }
         }
+    }
 
-        // Reset to start position
-        this.reset = function () {
+    // Reset to start position
+    reset() {
         this.x = this.startX;
         this.y = this.startY;
-        }
     }
 }
 
